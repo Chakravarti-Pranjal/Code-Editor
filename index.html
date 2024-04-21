@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduWeb/Code Editor</title>
+  <!-- - favicon -->
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="./js/main.js" defer></script>
+
+<!-- box icon link -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="boxes">
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1><i class="fa-brands fa-html5" style="margin: 0 10px;"></i>HTML</h1>
+        </div>
+        <textarea data-html><h2>Hello World!</h2></textarea>
+      </div>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1><i class="fa-brands fa-css3-alt" style="margin: 0 10px;"></i>CSS</h1>
+          <textarea data-css></textarea>
+        </div>
+      </div>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1><i class="fa-brands fa-js" style="margin: 0 10px;"></i>JavaScript</h1>
+          <textarea data-js></textarea>
+        </div>
+      </div>
+
+    </section>
+    <div class="button-container">
+      <button id="run" class="btn"><i class='bx bx-play'>RUN</i></button>
+      <button id="clear" class="btn">CLEAR</button>
+    </div>
+    <iframe data-code></iframe>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
